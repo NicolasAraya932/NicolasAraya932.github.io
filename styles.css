@@ -1,0 +1,136 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121a2d;
+  --panel-2: #17213a;
+  --text: #eaf0ff;
+  --muted: #b7c4e0;
+  --accent: #8fb8ff;
+  --border: rgba(255,255,255,0.08);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(143,184,255,0.15), transparent 30%),
+    radial-gradient(circle at top right, rgba(80,220,180,0.12), transparent 25%),
+    var(--bg);
+  color: var(--text);
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1;
+  margin: 0 0 12px;
+}
+
+.lead {
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+}
+
+.links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.links a:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.card.wide { grid-column: 1 / -1; }
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.15rem;
+}
+
+.entry + .entry {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.entry h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.entry span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.entry p, .card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.card p + p { margin-top: 10px; }
+
+@media (max-width: 860px) {
+  .hero, .grid {
+    grid-template-columns: 1fr;
+  }
+}
