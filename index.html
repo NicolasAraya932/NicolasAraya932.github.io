@@ -2,99 +2,394 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Nicolás Araya Ponce | CV</title>
-  <meta name="description" content="Research-oriented CV of Nicolás Araya Ponce: robotics, computer vision, 3D reconstruction, and NeRF.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicolás Araya · Robotics &amp; 3D Computer Vision</title>
+  <meta name="description" content="Portfolio of Nicolás Araya Ponce, Computer Engineer and M.Sc. in Electrical Engineering: 3D computer vision, field robotics, sensing and teaching.">
+  <meta property="og:title" content="Nicolás Araya · Robotics &amp; 3D Computer Vision">
+  <meta property="og:description" content="3D perception research, field robotics and sensing, teaching, and engineering that ships.">
+  <meta property="og:image" content="https://nicolasaraya932.github.io/assets/img/hero_orchard.jpg">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
-    <header class="hero">
-      <div>
-        <p class="eyebrow">Robotics · Computer Vision · 3D Reconstruction</p>
-        <h1>Nicolás Marcelo Araya Ponce</h1>
-        <p class="lead">
-          Computer Engineer, research assistant at RISLab, and M.Sc. student working on NeRF, multiview geometry,
-          visual perception, and robotics for agricultural and real-world environments.
-        </p>
-      </div>
-      <nav class="links">
-        <a href="mailto:nicolas.araya@postgrado.uoh.cl">Academic email</a>
-        <a href="mailto:nicolas.araya@ieee.org">IEEE email</a>
-        <a href="https://github.com/NicolasAraya932" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/nicolasmarayap/" target="_blank" rel="noreferrer">LinkedIn</a>
-      </nav>
-    </header>
 
-    <main class="grid">
-      <section class="card">
-        <h2>Research</h2>
-        <div class="entry">
-          <h3>UOH RISLab — Research Assistant and Thesis Student</h3>
-          <span>2022 – Present</span>
-          <p>NeRF, 3D reconstruction, geometric evaluation, segmentation, and robotics-oriented perception in uncontrolled environments.</p>
-        </div>
-        <div class="entry">
-          <h3>L3S / Leibniz University Hannover — International Research Internship</h3>
-          <span>2026</span>
-          <p>Robustness of NeRF models under image degradations for robotics and 3D reconstruction experiments.</p>
-        </div>
-        <div class="entry">
-          <h3>FOVI collaboration initiatives</h3>
-          <span>Current</span>
-          <p>AI, computer vision, and robotics for agriculture through international collaboration.</p>
-        </div>
-      </section>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">NA</span>
+      <span class="brand-name">Nicolás Araya</span>
+    </a>
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#thesis">Thesis</a>
+      <a href="#field">In the field</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#building">Building</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
 
-      <section class="card">
-        <h2>Education</h2>
-        <div class="entry">
-          <h3>Universidad de O'Higgins</h3>
-          <p>Candidate for the Professional Degree in Computer Engineering</p>
-          <p>M.Sc. in Engineering Sciences, Major in Electrical Engineering (in progress)</p>
-          <p>B.Sc. in Engineering Sciences, Major in Computer Engineering (2023)</p>
-        </div>
-      </section>
+<main>
 
-      <section class="card">
-        <h2>Technical Experience</h2>
-        <div class="entry">
-          <h3>FIC Tecnologías 4.0 Project</h3>
-          <p>Agricultural monitoring automation, Warthog robot data collection, and technical dashboard support.</p>
-        </div>
-        <div class="entry">
-          <h3>Teaching Assistant, AI in Robotics Diploma</h3>
-          <p>AI, computer vision, and autonomous driving support with gym-duckietown.</p>
-        </div>
-        <div class="entry">
-          <h3>Professional Internship, WoodtechMS</h3>
-          <p>Optimization of truck-load detection and counting algorithms.</p>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>Teaching and Leadership</h2>
-        <div class="entry">
-          <h3>Secretary, IEEE</h3>
-          <p>Academic coordination and student outreach.</p>
-        </div>
-        <div class="entry">
-          <h3>Mentor, Gabriel &amp; Mary Mustakis Foundation</h3>
-          <p>Advanced robotics and rescue robotics for children and young students.</p>
-        </div>
-      </section>
-
-      <section class="card wide">
-        <h2>Skills</h2>
-        <p><strong>Core areas:</strong> Robotics, computer vision, 3D reconstruction, multiview geometry, visual perception.</p>
-        <p><strong>Methods:</strong> NeRF, segmentation, pose estimation, object detection, image processing, geometric evaluation.</p>
-        <p><strong>Languages:</strong> Python, C, C++, C#, R, MATLAB, JavaScript, Lua, LaTeX.</p>
-        <p><strong>Tools:</strong> Git, GitHub, Linux, Docker, Unix Shell, WSL, CMake, VS Code, PyCharm, Vim, NeoVim.</p>
-      </section>
-    </main>
+<!-- HERO -->
+<section id="top" class="wrap hero">
+  <div class="hero-text">
+    <p class="eyebrow">Computer Engineer · M.Sc. Electrical Engineering</p>
+    <h1>I take 3D perception out of the lab and into the orchard.</h1>
+    <p class="lead">I build systems that let robots and sensors understand real places: from 3D reconstruction research to hardware I install myself in the field, and the students I teach along the way.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+      <a class="btn" href="#thesis">See my thesis</a>
+    </div>
+    <div class="facts">
+      <div class="fact"><strong>7.0 / 7.0</strong><span>M.Sc. thesis, highest distinction</span></div>
+      <div class="fact"><strong>Hannover, DE</strong><span>Research stay, L3S · 2026</span></div>
+      <div class="fact"><strong>1st place</strong><span>FIRVI 2025, as team mentor</span></div>
+    </div>
   </div>
+  <figure class="hero-figure">
+    <img src="assets/img/hero_orchard.jpg" alt="Nicolás in a cherry orchard next to a sensor-equipped field robot" width="1280" height="853">
+    <figcaption class="small">Data collection in a cherry orchard, O'Higgins Region, Chile.</figcaption>
+  </figure>
+</section>
+
+<!-- PILLARS -->
+<section class="wrap pillars" aria-labelledby="what-i-do">
+  <h2 id="what-i-do">What I do</h2>
+  <div class="grid-auto">
+    <a class="pillar" href="#research"><span class="num">01</span><span class="title">Research</span><span class="text">3D computer vision and neural 3D reconstruction for robotics and agriculture.</span></a>
+    <a class="pillar" href="#field"><span class="num">02</span><span class="title">In the field</span><span class="text">Field robots, precision GPS, sensor networks and weather balloons, deployed by hand.</span></a>
+    <a class="pillar" href="#teaching"><span class="num">03</span><span class="title">Teaching</span><span class="text">Robotics mentor for school students, university TA, workshop tutor.</span></a>
+    <a class="pillar" href="#building"><span class="num">04</span><span class="title">Building</span><span class="text">Co-founded an academy and built its platform; consulting and industry work.</span></a>
+  </div>
+</section>
+
+<!-- 01 RESEARCH -->
+<section id="research" class="band">
+  <div class="wrap section">
+    <div class="intro">
+      <p class="eyebrow">01 · Research</p>
+      <h2 class="h2">Teaching machines to see objects in 3D</h2>
+      <p class="lead">At RISLab, Universidad de O'Higgins, I study how a set of ordinary photos can become a 3D model a robot can reason about, for example to find and count cherries on a tree.</p>
+    </div>
+
+    <article class="feature">
+      <img src="assets/img/talk_cherry.jpg" alt="Nicolás presenting 3D reconstruction of cherry trees on stage at LACORO" width="1280" height="720" loading="lazy">
+      <div class="feature-body">
+        <span class="pill">1st place · Master's paper · LACORO 2024</span>
+        <h3>3D Reconstruction of Cherry Trees and Fruits Using Implicit Neural Models</h3>
+        <p class="body-2">Presented at the LACORO seminar, where it won first place among master's papers. It was the first public version of the idea that became my thesis: rebuild a whole cherry tree in 3D from photos, then find the fruit inside it.</p>
+        <p class="small">With Ariel Zúñiga and Rodrigo Verschae · RISLab, Universidad de O'Higgins</p>
+        <a href="#thesis"><strong>See where it led: the thesis</strong></a>
+      </div>
+    </article>
+
+    <div class="grid-300">
+      <article class="card">
+        <div class="photo-pair">
+          <img src="assets/img/hannover_selfie.jpg" alt="Nicolás in front of Hannover's New Town Hall" loading="lazy">
+          <img src="assets/img/hannover_pepper.jpg" alt="A Pepper humanoid robot fitted with extra cameras at the L3S lab" loading="lazy">
+        </div>
+        <div class="card-body">
+          <span class="mono">Feb – Mar 2026 · Germany</span>
+          <h3 class="h3">International research stay</h3>
+          <p class="body-2">L3S Research Center, Leibniz University Hannover. Tested how well 3D reconstruction holds up when photos are blurry, dark or noisy.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/img/poster_2023.jpg" alt="Nicolás standing next to his research poster" style="object-position: center 30%;" loading="lazy">
+        <div class="card-body">
+          <span class="mono">Open source · Talks</span>
+          <h3 class="h3">Sharing the tools</h3>
+          <p class="body-2">Public tools built during the thesis: a Nerfstudio patch with a better image matcher, FruitNeRF on a ZipNeRF backbone, a live 3D model explorer, and a dataset converter. Plus a hands-on workshop at LACORO 2025.</p>
+          <a href="https://github.com/NicolasAraya932"><strong>Repositories on GitHub</strong></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Forthcoming papers: titles and authors only, on purpose -->
+    <div class="block">
+      <div class="papers-head">
+        <h3>Forthcoming papers</h3>
+        <span class="small">Details will be shared once published.</span>
+      </div>
+      <ul class="papers">
+        <li class="paper">
+          <div class="paper-text">
+            <span class="paper-title">Beyond Rendering Quality: Evaluating 3D Reconstruction Robustness for Robotics</span>
+            <span class="paper-authors"><strong>N. Araya</strong>, E. Erdal, R. Verschae, N. Navarro-Guerrero</span>
+          </div>
+          <span class="status">Under review</span>
+        </li>
+        <li class="paper">
+          <div class="paper-text">
+            <span class="paper-title">Image-to-Trajectory Generation for Robotic 3D Printing: Visual Profile Mapping and Kinematic Tracking</span>
+            <span class="paper-authors"><strong>N. Araya</strong>, R. Verschae, R. Guamán-Rivera</span>
+          </div>
+          <span class="status">Under review</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- THESIS -->
+<section id="thesis" class="thesis">
+  <div class="wrap section">
+    <div class="intro">
+      <p class="eyebrow">Master's thesis · defended 26 October 2026</p>
+      <h2 class="h2">Mask-Guided Candidate Regions in Neural Radiance Fields</h2>
+      <p class="lead">Give the computer photos of a tree, and show it in a few of them what a cherry looks like. It returns a separate 3D box around every cherry, ready for a robot or an agronomist to count and measure. The method is not tied to cherries: it works for any kind of object.</p>
+      <div class="tags">
+        <span class="tag tag-dark">Grade 7.0 / 7.0</span>
+        <span class="tag">Highest distinction</span>
+        <span class="tag">Advisor: Rodrigo Verschae</span>
+        <span class="tag">Funded by FIC O'Higgins, UOH and ANID</span>
+      </div>
+    </div>
+
+    <figure class="block" style="gap: 12px;">
+      <div class="video-box">
+        <video controls playsinline preload="none" poster="assets/img/t_poster.jpg" width="1280" height="720">
+          <source src="assets/video/thesis-summary.mp4" type="video/mp4">
+          Your browser cannot play this video.
+        </video>
+      </div>
+      <figcaption class="small">The first half of the thesis in 20 seconds: from photos of a real tree to individual cherries, separated in 3D.</figcaption>
+    </figure>
+
+    <div class="grid-300" style="gap: 16px;">
+      <div class="panel">
+        <span class="mono">The problem</span>
+        <p>Modern 3D reconstruction (NeRF) gives a beautiful, continuous model of a scene, but it has no idea where one object ends and the next begins. A tree is just one big cloud.</p>
+      </div>
+      <div class="panel">
+        <span class="mono" style="color: var(--green);">The idea</span>
+        <p>Use simple 2D masks ("this is a cherry") to teach the 3D model where the objects are, then cut that evidence into bounded boxes: one candidate region per object, each with its own shape and color.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>How it works, step by step</h3>
+      <ol class="steps">
+        <li class="step">
+          <img src="assets/img/t_capture.jpg" alt="Photos of the tree arranged where each was taken" loading="lazy">
+          <span class="step-label">01 · Capture</span>
+          <span class="body-2">Photos from all around the tree, each with its known camera position.</span>
+        </li>
+        <li class="step">
+          <img src="assets/img/t_reconstruct.jpg" alt="The cherry tree rebuilt as a 3D scene" loading="lazy">
+          <span class="step-label">02 · Reconstruct</span>
+          <span class="body-2">A neural model rebuilds the whole tree as a 3D scene.</span>
+        </li>
+        <li class="step">
+          <img src="assets/img/th_highlight.jpg" alt="3D cherry tree with every fruit marked in red by the mask-guided model" loading="lazy">
+          <span class="step-label">03 · Highlight</span>
+          <span class="body-2">Masks of the fruit teach the model where the cherries are: every fruit lights up in red inside the 3D tree.</span>
+        </li>
+        <li class="step">
+          <img class="contain" src="assets/img/th_instances.jpg" alt="A cluster of cherries split into separate instances, each in its own color" loading="lazy">
+          <span class="step-label">04 · Separate</span>
+          <span class="body-2">Instance separation splits each cluster into single cherries, one color per fruit.</span>
+        </li>
+      </ol>
+
+      <div class="inner">
+        <div class="inner-head">
+          <h4>Inside step 04: separating touching cherries in three stages</h4>
+          <span class="small">A greedy algorithm, run inside each candidate region</span>
+        </div>
+        <ol class="steps" style="gap: 20px;">
+          <li class="step">
+            <img class="contain" src="assets/img/th_views.jpg" alt="Virtual cameras arranged around a cluster, each view with its cherry masks" loading="lazy">
+            <span class="step-label">Stage 1 · Look from every side</span>
+            <span class="body-2">Virtual cameras circle the cluster; each new view gets its cherry masks.</span>
+          </li>
+          <li class="step">
+            <div class="vote" aria-hidden="true">
+              <span>vote</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1E6B47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              <span class="keep">keep fruit</span>
+            </div>
+            <span class="step-label">Stage 2 · Vote out the background</span>
+            <span class="body-2">A 3D point stays only if most of the views that see it agree it is fruit. Leaves and noise drop out.</span>
+          </li>
+          <li class="step">
+            <img src="assets/img/th_recolored.jpg" alt="Rendered view where each separated cherry is recolored with its own label" loading="lazy">
+            <span class="step-label">Stage 3 · Assign, greedily</span>
+            <span class="body-2">Mask by mask, the remaining points are matched to the nearest cherry centre, so each point ends up in exactly one fruit.</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>What it achieved</h3>
+      <div class="steps">
+        <div class="stat"><strong>0.24 → 0.66</strong><span class="body-2">How well the model outlines the target fruit (mask mIoU), before and after the mask-guided step. Almost 3× better.</span></div>
+        <div class="stat"><strong>0.72</strong><span class="body-2">Average overlap with the true cherry shape when splitting clustered cherries into single fruits (silhouette IoU).</span></div>
+        <div class="stat"><strong>336</strong><span class="body-2">Photos in a new dataset of a real cherry tree, taken in the orchard with a capture protocol I designed and validated.</span></div>
+        <div class="stat"><strong>Pose first</strong><span class="body-2">Stress tests showed that errors in camera position hurt the result more than blur, noise or poor light.</span></div>
+      </div>
+    </div>
+
+    <div class="grid-300" style="gap: 16px;">
+      <figure class="app">
+        <img src="assets/img/r_tree3d.jpg" alt="3D model of a cherry tree captured in the orchard" loading="lazy">
+        <figcaption><span class="app-title">In the orchard</span><span class="body-2">Finding and measuring fruit on real trees for precision agriculture.</span></figcaption>
+      </figure>
+      <figure class="app">
+        <img class="contain" src="assets/img/lab_bonsai.jpg" alt="Indoor bonsai scene: the photo, its object mask, and the object recovered on its own in 3D" loading="lazy">
+        <figcaption><span class="app-title">Indoors, for robots</span><span class="body-2">The same method on an indoor scene: photo, mask, and the object cut out alone in 3D. Then stress-tested with darkness, blur and camera errors.</span><span class="small" style="font-size: 13px;">Scene: Mip-NeRF 360 “bonsai” dataset</span></figcaption>
+      </figure>
+      <figure class="app">
+        <img src="assets/img/team_screen.jpg" alt="Nicolás with the thesis committee after the defense" style="object-position: center 40%;" loading="lazy">
+        <figcaption><span class="app-title">The defense</span><span class="body-2">26 October 2026, Universidad de O'Higgins.</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn" href="https://github.com/NicolasAraya932">Code on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- 02 FIELD -->
+<section id="field" class="wrap section">
+  <div class="split-head">
+    <div>
+      <p class="eyebrow">02 · In the field</p>
+      <h2 class="h2">I own the whole chain, from the sensor to the screen</h2>
+    </div>
+    <p>Research that leaves the lab: I install the hardware, make it send its data on its own, and build what people use to look at it.</p>
+  </div>
+
+  <div class="mosaic">
+    <figure class="tile wide">
+      <img src="assets/img/warthog_team.jpg" alt="Team standing beside the Warthog field robot on campus" loading="lazy">
+      <figcaption>Operating the Clearpath Warthog field robot</figcaption>
+    </figure>
+    <figure class="tile tall">
+      <img src="assets/img/radiosonde.jpg" alt="Nicolás releasing a weather balloon from a rooftop" loading="lazy">
+      <figcaption>Launching radiosondes</figcaption>
+    </figure>
+    <figure class="tile">
+      <img src="assets/img/cherries_sensor.jpg" alt="Cherries on a branch with a small monitoring device" loading="lazy">
+      <figcaption>Monitoring cherry growth</figcaption>
+    </figure>
+    <figure class="tile">
+      <img src="assets/img/hardhat_roof.jpg" alt="Nicolás in a hard hat on a rooftop installation" loading="lazy">
+      <figcaption>Rooftop GPS station install</figcaption>
+    </figure>
+    <figure class="tile">
+      <img src="assets/img/lorawan_gateway.jpg" alt="Team mounting a LoRaWAN gateway on a mast" loading="lazy">
+      <figcaption>LoRaWAN Milesight gateway installation</figcaption>
+    </figure>
+    <figure class="tile">
+      <img class="contain" src="assets/img/cherry_report.jpg" alt="Chart of fruit size over time for two orchard rows" loading="lazy">
+      <figcaption>Cherry growth report</figcaption>
+    </figure>
+  </div>
+
+  <div class="list-grid">
+    <div class="list-item"><h3>Precision agriculture</h3><p class="body-2">Research assistant on a regional FIC project automating the monitoring of cherry production. 2024 – present.</p></div>
+    <div class="list-item"><h3>Plug-and-play GPS stations</h3><p class="body-2">Cellular gateways that set up centimetre-level GPS on their own and send the data to a server. 2026.</p></div>
+    <div class="list-item"><h3>Atmospheric soundings</h3><p class="body-2">Consultant for Flagship Labs (Cambridge, MA) with UOH: weather balloons for wind profiles. 2026 – present.</p></div>
+    <div class="list-item"><h3>Cherry ripeness cameras</h3><p class="body-2">Installed and calibrated hyperspectral, multispectral and RGB cameras plus weather sensors to model how cherries ripen. 2026.</p></div>
+  </div>
+</section>
+
+<!-- 03 TEACHING -->
+<section id="teaching" class="dark">
+  <div class="wrap section teach">
+    <div class="teach-text">
+      <p class="eyebrow">03 · Teaching</p>
+      <h2 class="h2">Robotics is better when you can explain it</h2>
+      <p>Since 2023 I have mentored school teams building robots, and taught university courses from the assistant's side of the room.</p>
+      <ul class="roles">
+        <li><span class="role">Robotics, Tech Art and Rescue mentor</span><span class="where">Fundación Mustakis · 2023 – 2026</span></li>
+        <li><span class="role">TA: Robotics, Systems Programming, Data Mining</span><span class="where">UOH · 2023 – 2026</span></li>
+        <li><span class="role">TA, AI in Robotics Diploma</span><span class="where">Universidad de Chile · 2024 – 2025</span></li>
+        <li><span class="role">Workshop tutor, 3D reconstruction</span><span class="where">LACORO · 2025</span></li>
+        <li><span class="role">Secretary, IEEE Student Branch</span><span class="where">UOH · 2026 – present</span></li>
+      </ul>
+    </div>
+    <div class="teach-photos">
+      <img class="wide" src="assets/img/students_group.jpg" alt="Group of students holding certificates" loading="lazy">
+      <figure class="tile">
+        <img src="assets/img/medal_firvi.jpg" alt="Gold medal: first place, Club CyT Arte Tecnológico, FIRVI, Valparaíso 2025" loading="lazy">
+        <figcaption>1st place, FIRVI 2025</figcaption>
+      </figure>
+      <img src="assets/img/mustakis_selfie.jpg" alt="Nicolás smiling in a classroom full of students" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- 04 BUILDING -->
+<section id="building" class="wrap section">
+  <div class="intro">
+    <p class="eyebrow">04 · Building</p>
+    <h2 class="h2">Engineering that ships to real users</h2>
+  </div>
+  <article class="venture">
+    <div class="venture-body">
+      <span class="mono">Co-founder &amp; Deputy Director · 2026 – present</span>
+      <h3>Academia Coporfu</h3>
+      <p class="body-2">A tutoring academy for university-admission (PAES) preparation. I helped found the company, wrote its legal terms, and built and run its website, booking platform and database.</p>
+      <a href="https://www.coporfu.cl"><strong>coporfu.cl</strong></a>
+    </div>
+    <img src="assets/img/coporfu_home.jpg" alt="Home page of the Academia Coporfu website" loading="lazy">
+  </article>
+  <div class="grid-auto">
+    <div class="mini"><span class="mono">2024 · Internship</span><h3>WoodtechMS</h3><p class="body-2">Made the truck-load counting algorithms of Logmeter run faster.</p></div>
+    <div class="mini"><span class="mono">2025 · Supervision</span><h3>Coca-Cola Andina</h3><p class="body-2">Supervised software interns and their supervisors in agile development.</p></div>
+    <div class="mini"><span class="mono">2024 – 2025 · Freelance</span><h3>Outlier AI</h3><p class="body-2">Wrote ground-truth data used to train large language models.</p></div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="band" aria-labelledby="path">
+  <div class="wrap section" style="padding-block: 72px; gap: 32px;">
+    <h2 id="path" style="font-size: 28px;">The path so far</h2>
+    <ol class="timeline">
+      <li class="year"><span class="year-label">2020 – 2022</span>
+        <ul><li>Starts Computer Engineering, UOH</li><li class="key">Joins RISLab; thesis research begins (Dec 2022)</li></ul></li>
+      <li class="year"><span class="year-label">2023</span>
+        <ul><li>Vision and control for a robot arm, RISLab</li><li>Robotics mentor, Fundación Mustakis</li><li>TA, Systems Programming</li><li>TheLightForce, Velocistas Beauchef</li></ul></li>
+      <li class="year"><span class="year-label">2024</span>
+        <ul><li>B.Sc. in Engineering Sciences; starts M.Sc.</li><li>Internship, WoodtechMS</li><li>FIC cherry project: LoRaWAN network, Warthog robot</li><li>TA, AI in Robotics, U. de Chile</li><li class="key">1st place master's paper, LACORO</li></ul></li>
+      <li class="year"><span class="year-label">2025</span>
+        <ul><li>Intern supervision, Coca-Cola Andina</li><li>TA, Robotics, UOH</li><li class="key">Team mentor: 1st place FIRVI</li><li>Workshop tutor, LACORO 2025</li></ul></li>
+      <li class="year"><span class="year-label">2026</span>
+        <ul><li class="key">Research stay, L3S Hannover (Feb – Mar)</li><li>IEEE Student Branch secretary</li><li>External computer-vision expert, UOH (Apr)</li><li>Co-founds Academia Coporfu; GNSS consultant (Jul)</li><li>Flagship Labs radiosondes (Aug)</li><li class="key">Thesis defended, 7.0 (26 Oct)</li><li>Hyperspectral cherry project (Oct – Nov)</li></ul></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="wrap contact">
+  <img src="assets/img/contact_portrait.jpg" alt="Nicolás with his thesis committee at the Universidad de O'Higgins" loading="lazy">
+  <div class="contact-text">
+    <h2>Looking for my next role in robotics, computer vision or applied research.</h2>
+    <p class="lead" style="font-size: 17px;">Based in Machalí, Chile. Open to remote work and relocation. Spanish (native), English (B2).</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="mailto:nicolas.araya@ieee.org">nicolas.araya@ieee.org</a>
+      <a class="btn" href="https://www.linkedin.com/in/nicolasmarayap/" rel="noreferrer">LinkedIn</a>
+      <a class="btn" href="https://github.com/NicolasAraya932" rel="noreferrer">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap site-footer">
+  <span>© 2026 Nicolás Marcelo Araya Ponce</span>
+  <span>RISLab · Universidad de O'Higgins</span>
+</footer>
+
 </body>
 </html>
