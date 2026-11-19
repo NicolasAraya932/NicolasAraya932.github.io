@@ -25,9 +25,11 @@
     <div class="nav-links">
       <a href="#research">Research</a>
       <a href="#thesis">Thesis</a>
+      <a href="#code">Code</a>
       <a href="#field">In the field</a>
       <a href="#teaching">Teaching</a>
       <a href="#building">Building</a>
+      <a href="#ai">AI</a>
       <a class="nav-cta" href="#contact">Contact</a>
     </div>
   </nav>
@@ -62,9 +64,10 @@
   <h2 id="what-i-do">What I do</h2>
   <div class="grid-auto">
     <a class="pillar" href="#research"><span class="num">01</span><span class="title">Research</span><span class="text">3D computer vision and neural 3D reconstruction for robotics and agriculture.</span></a>
-    <a class="pillar" href="#field"><span class="num">02</span><span class="title">In the field</span><span class="text">Field robots, precision GPS, sensor networks and weather balloons, deployed by hand.</span></a>
-    <a class="pillar" href="#teaching"><span class="num">03</span><span class="title">Teaching</span><span class="text">Robotics mentor for school students, university TA, workshop tutor.</span></a>
-    <a class="pillar" href="#building"><span class="num">04</span><span class="title">Building</span><span class="text">Co-founded an academy and built its platform; consulting and industry work.</span></a>
+    <a class="pillar" href="#code"><span class="num">02</span><span class="title">Code</span><span class="text">Python and PyTorch tools on Nerfstudio: new methods, viewers and data pipelines.</span></a>
+    <a class="pillar" href="#field"><span class="num">03</span><span class="title">In the field</span><span class="text">Field robots, precision GPS, sensor networks and weather balloons, deployed by hand.</span></a>
+    <a class="pillar" href="#teaching"><span class="num">04</span><span class="title">Teaching</span><span class="text">Robotics mentor for school students, university TA, workshop tutor.</span></a>
+    <a class="pillar" href="#building"><span class="num">05</span><span class="title">Building</span><span class="text">Co-founded an academy and built its platform; consulting and industry work.</span></a>
   </div>
 </section>
 
@@ -106,7 +109,7 @@
           <span class="mono">Open source · Talks</span>
           <h3 class="h3">Sharing the tools</h3>
           <p class="body-2">Public tools built during the thesis: a Nerfstudio patch with a better image matcher, FruitNeRF on a ZipNeRF backbone, a live 3D model explorer, and a dataset converter. Plus a hands-on workshop at LACORO 2025.</p>
-          <a href="https://github.com/NicolasAraya932"><strong>Repositories on GitHub</strong></a>
+          <a href="#code"><strong>See the code</strong></a>
         </div>
       </article>
     </div>
@@ -253,16 +256,76 @@
     </div>
 
     <div class="btn-row">
-      <a class="btn" href="https://github.com/NicolasAraya932">Code on GitHub</a>
+      <a class="btn" href="#code">See the code behind it</a>
     </div>
   </div>
 </section>
 
-<!-- 02 FIELD -->
+<!-- 02 CODE -->
+<section id="code" class="wrap section">
+  <div class="split-head">
+    <div>
+      <p class="eyebrow">02 · Code</p>
+      <h2 class="h2">The software behind the research</h2>
+    </div>
+    <p>Most of my thesis is code. I build on Nerfstudio, the open-source framework for neural 3D reconstruction: new methods, tools to inspect what a model learned, and pipelines that keep experiments comparable.</p>
+  </div>
+
+  <ul class="stack" aria-label="Tools I work with">
+    <li>Python</li><li>PyTorch</li><li>Nerfstudio</li><li>viser</li><li>NumPy · SciPy</li><li>Docker · pixi</li><li>Git</li><li>LaTeX</li><li>JavaScript</li><li>SQL · Supabase</li><li>ROS · CoppeliaSim</li><li>MATLAB</li>
+  </ul>
+
+  <article class="note">
+    <div class="note-head">
+      <span class="mono">Engineering decision · fruit_zipnerf</span>
+      <h3>Why I did not use the official ZipNeRF</h3>
+    </div>
+    <div class="note-body">
+      <p>The official ZipNeRF is written in JAX, and a JAX model cannot join PyTorch's training loop, so it cannot be a Nerfstudio method. I put FruitNeRF's fruit-segmentation head on a PyTorch ZipNeRF backbone instead, left the original FruitNeRF untouched, and kept the output format identical.</p>
+      <p>The result is a fair A/B test: same data, same outputs, only the backbone changes. My earlier baseline runs stay valid.</p>
+    </div>
+  </article>
+
+  <div class="repos">
+    <a class="repo" href="https://github.com/NicolasAraya932/fruit_zipnerf">
+      <span class="repo-name">fruit_zipnerf</span>
+      <span class="body-2">FruitNeRF's semantic head on a ZipNeRF backbone, registered as a Nerfstudio method.</span>
+      <span class="repo-tags"><span>Nerfstudio method</span><span>PyTorch</span></span>
+    </a>
+    <a class="repo" href="https://github.com/NicolasAraya932/Nerfstudio_Patch">
+      <span class="repo-name">Nerfstudio_Patch</span>
+      <span class="body-2">A Nerfstudio fork where the dataset owns its coordinate frame, so several models trained on it line up exactly.</span>
+      <span class="repo-tags"><span>Reproducibility</span><span>Docker</span></span>
+    </a>
+    <a class="repo" href="https://github.com/NicolasAraya932/VirtualNeRFExplorer">
+      <span class="repo-name">VirtualNeRFExplorer</span>
+      <span class="body-2">Opens any trained Nerfstudio model and lets you fly through it, with live RGB and depth renders, training cameras and snapshots.</span>
+      <span class="repo-tags"><span>viser</span><span>3D viewer</span></span>
+    </a>
+    <a class="repo" href="https://github.com/NicolasAraya932/FromNerfstudioToReplica">
+      <span class="repo-name">FromNerfstudioToReplica</span>
+      <span class="body-2">Converts Nerfstudio datasets to the Replica format, so Semantic-NeRF can be trained on the same captures.</span>
+      <span class="repo-tags"><span>Data pipeline</span></span>
+    </a>
+    <a class="repo" href="https://github.com/NicolasAraya932/Nerfstudio-Hands-On">
+      <span class="repo-name">Nerfstudio-Hands-On</span>
+      <span class="body-2">The workshop I teach: from what a radiance field is to training your own scene in Colab.</span>
+      <span class="repo-tags"><span>Teaching</span><span>Colab</span></span>
+    </a>
+    <a class="repo" href="https://github.com/NicolasAraya932/MotionPlanning">
+      <span class="repo-name">MotionPlanning</span>
+      <span class="body-2">A* path planning and PID control for a mobile robot simulated in CoppeliaSim.</span>
+      <span class="repo-tags"><span>Robotics</span><span>Control</span></span>
+    </a>
+  </div>
+  <p class="small">More of the thesis code will open up once the papers that use it are published.</p>
+</section>
+
+<!-- 03 FIELD -->
 <section id="field" class="wrap section">
   <div class="split-head">
     <div>
-      <p class="eyebrow">02 · In the field</p>
+      <p class="eyebrow">03 · In the field</p>
       <h2 class="h2">I own the whole chain, from the sensor to the screen</h2>
     </div>
     <p>Research that leaves the lab: I install the hardware, make it send its data on its own, and build what people use to look at it.</p>
@@ -307,7 +370,7 @@
 <section id="teaching" class="dark">
   <div class="wrap section teach">
     <div class="teach-text">
-      <p class="eyebrow">03 · Teaching</p>
+      <p class="eyebrow">04 · Teaching</p>
       <h2 class="h2">Robotics is better when you can explain it</h2>
       <p>Since 2023 I have mentored school teams building robots, and taught university courses from the assistant's side of the room.</p>
       <ul class="roles">
@@ -332,7 +395,7 @@
 <!-- 04 BUILDING -->
 <section id="building" class="wrap section">
   <div class="intro">
-    <p class="eyebrow">04 · Building</p>
+    <p class="eyebrow">05 · Building</p>
     <h2 class="h2">Engineering that ships to real users</h2>
   </div>
   <article class="venture">
@@ -348,6 +411,48 @@
     <div class="mini"><span class="mono">2024 · Internship</span><h3>WoodtechMS</h3><p class="body-2">Made the truck-load counting algorithms of Logmeter run faster.</p></div>
     <div class="mini"><span class="mono">2025 · Supervision</span><h3>Coca-Cola Andina</h3><p class="body-2">Supervised software interns and their supervisors in agile development.</p></div>
     <div class="mini"><span class="mono">2024 – 2025 · Freelance</span><h3>Outlier AI</h3><p class="body-2">Wrote ground-truth data used to train large language models.</p></div>
+  </div>
+</section>
+
+<!-- HOW I WORK WITH AI -->
+<section id="ai" class="ai-sec">
+  <div class="wrap section">
+    <div class="intro">
+      <p class="eyebrow">How I work</p>
+      <h2 class="h2">I use AI on purpose, and I check its work</h2>
+      <p class="lead">I work with Claude Code, Anthropic's coding agent, every day. It makes me faster, but the judgement stays mine: I decide what to build, I read what it writes, and I only trust results I have seen run.</p>
+    </div>
+    <div class="ai-grid">
+      <div class="ai-col">
+        <span class="num">01</span>
+        <h3>A method, not a shortcut</h3>
+        <ul>
+          <li>Plan first, then change one thing at a time so every change is easy to review.</li>
+          <li>Commit locally, read the diff, push only after it passes.</li>
+          <li>Test on a local copy before anything touches production.</li>
+          <li>End each session with a written handoff, so the next one starts from facts, not memory.</li>
+        </ul>
+      </div>
+      <div class="ai-col">
+        <span class="num">02</span>
+        <h3>A tutor that shows its work</h3>
+        <ul>
+          <li>Walk through a paper's equations until I can explain them without help.</li>
+          <li>Compare implementations before choosing one, like JAX versus PyTorch for ZipNeRF.</li>
+          <li>Measure before guessing: when a result looks wrong, find the number that explains it.</li>
+        </ul>
+      </div>
+      <div class="ai-col">
+        <span class="num">03</span>
+        <h3>What I don't hand over</h3>
+        <ul>
+          <li>Research questions, design decisions and conclusions.</li>
+          <li>Unpublished papers, private data and credentials stay out of prompts.</li>
+          <li>Nothing gets published, deployed or claimed until I have read it and seen it work.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small">This site is an example: I chose the content and photos and designed it with Claude, then reviewed every section before publishing.</p>
   </div>
 </section>
 
