@@ -275,17 +275,6 @@
     <li>Python</li><li>PyTorch</li><li>Nerfstudio</li><li>viser</li><li>NumPy · SciPy</li><li>Docker · pixi</li><li>Git</li><li>LaTeX</li><li>JavaScript</li><li>SQL · Supabase</li><li>ROS · CoppeliaSim</li><li>MATLAB</li>
   </ul>
 
-  <article class="note">
-    <div class="note-head">
-      <span class="mono">Engineering decision · fruit_zipnerf</span>
-      <h3>Why I did not use the official ZipNeRF</h3>
-    </div>
-    <div class="note-body">
-      <p>The official ZipNeRF is written in JAX, and a JAX model cannot join PyTorch's training loop, so it cannot be a Nerfstudio method. I put FruitNeRF's fruit-segmentation head on a PyTorch ZipNeRF backbone instead, left the original FruitNeRF untouched, and kept the output format identical.</p>
-      <p>The result is a fair A/B test: same data, same outputs, only the backbone changes. My earlier baseline runs stay valid.</p>
-    </div>
-  </article>
-
   <div class="repos">
     <a class="repo" href="https://github.com/NicolasAraya932/fruit_zipnerf">
       <span class="repo-name">fruit_zipnerf</span>
