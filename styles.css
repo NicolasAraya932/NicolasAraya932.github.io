@@ -268,3 +268,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .ai-col li { font-size: 15px; color: var(--ink-2); padding-left: 16px; position: relative; }
 .ai-col li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
 .pillars .grid-auto { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.lang-btn {
+  margin-left: 6px; min-width: 44px; min-height: 40px; padding: 8px 12px;
+  border-radius: 999px; border: 1px solid var(--line-strong); background: transparent;
+  font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: var(--ink); cursor: pointer;
+}
+.lang-btn:hover { background: #F0F0EA; }
