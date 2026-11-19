@@ -42,8 +42,8 @@
 <section id="top" class="wrap hero">
   <div class="hero-text">
     <p class="eyebrow">Computer Engineer · M.Sc. Electrical Engineering</p>
-    <h1>I take 3D perception out of the lab and into the orchard.</h1>
-    <p class="lead">I build systems that let robots and sensors understand real places: from 3D reconstruction research to hardware I install myself in the field, and the students I teach along the way.</p>
+    <h1>I build software that works in the real world.</h1>
+    <p class="lead">From 3D computer vision research to web platforms used every day and robots in the field: I take ideas from prototype to production.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="#contact">Get in touch</a>
       <a class="btn" href="#thesis">See my thesis</a>
@@ -115,17 +115,18 @@
       </article>
     </div>
 
-    <!-- Forthcoming papers: titles and authors only, on purpose -->
+    <!-- Forthcoming papers: titles, authors and abstracts only -->
     <div class="block">
       <div class="papers-head">
         <h3>Forthcoming papers</h3>
-        <span class="small">Details will be shared once published.</span>
+        <span class="small">Full papers will be shared once published.</span>
       </div>
       <ul class="papers">
         <li class="paper">
           <div class="paper-text">
             <span class="paper-title">Beyond Rendering Quality: Evaluating 3D Reconstruction Robustness for Robotics</span>
             <span class="paper-authors"><strong>N. Araya</strong>, E. Erdal, R. Verschae, N. Navarro-Guerrero</span>
+            <details class="abstract"><summary>Abstract</summary><p>Robotic manipulation and navigation require three-dimensional representations that preserve spatial structure, not only produce visually accurate renderings. Yet image-based evaluation does not directly measure whether reconstructed objects occupy consistent locations in space. We investigate this distinction through a controlled robustness study of Nerfacto and Splatfacto, representing Neural Radiance Fields and 3D Gaussian Splatting, respectively. Using two object-centered scenes from the Mip-NeRF 360 dataset, we evaluate six capture perturbations relevant to robotics: gamma-induced intensity changes, motion blur, camera pose noise, restricted camera elevations, hemispherical view coverage, and image subsampling. Both pipelines are evaluated using image-quality metrics. For Nerfacto, we additionally introduce an object-centered evaluation protocol that uses mask-supervised fine-tuning to isolate the target object and measures silhouette overlap and density-derived occupancy overlap against an undegraded reference reconstruction on a shared voxel grid. The results reveal that rendering quality and occupancy consistency respond differently to capture perturbations. Gamma-induced intensity changes substantially reduce image-quality scores while largely preserving occupancy overlap, whereas restricted view coverage can improve image-quality scores over the retained viewpoints despite reduced occupancy overlap. Splatfacto generally achieves higher image quality under favorable capture conditions, while Nerfacto is less sensitive to several perturbations. These findings motivate complementary image-level and occupancy-level evaluation when assessing reconstruction pipelines for robotics. The occupancy analysis measures consistency with a reference reconstruction rather than ground-truth geometric accuracy; downstream robotic task performance remains to be established.</p></details>
           </div>
           <span class="status">Under review</span>
         </li>
@@ -133,6 +134,7 @@
           <div class="paper-text">
             <span class="paper-title">Image-to-Trajectory Generation for Robotic 3D Printing: Visual Profile Mapping and Kinematic Tracking</span>
             <span class="paper-authors"><strong>N. Araya</strong>, R. Verschae, R. Guamán-Rivera</span>
+            <details class="abstract"><summary>Abstract</summary><p>Robotic 3D printing commonly relies on predefined toolpaths generated from digital geometric models, which limits the direct use of visual representations as inputs for trajectory generation. This work presents an image-to-trajectory methodology that transforms two-dimensional visual profiles into executable three-dimensional Cartesian trajectories for robotic 3D printing applications. The proposed approach extracts the contour of a 2D image, maps its pixel coordinates to the manipulator workspace, parameterises the resulting profile at a prescribed height, and tracks the generated trajectory using a Jacobian-based kinematic controller. The methodology is evaluated in both a digital-twin environment and a physical robotic manipulator under different profile geometries, execution speeds, and workspace heights. Trajectory tracking is quantified using the Integral Absolute Error and the mean Euclidean tracking error. Experimental results show that the real manipulator consistently tracks trajectories generated directly from visual profiles, with mean Euclidean errors in the millimetre range. The comparison between simulation and physical execution reveals substantially lower tracking errors in the digital twin, indicating that actuation and hardware-related effects dominate the observed error rather than the trajectory generation process. Moreover, cross-evaluating circular and square profiles shows no resolvable geometry-dependent effect under the experimental conditions. These results demonstrate the feasibility of transforming visual 2D profiles into executable robotic trajectories and provide a basis for image-driven trajectory generation in automated construction and robotic 3D printing.</p></details>
           </div>
           <span class="status">Under review</span>
         </li>

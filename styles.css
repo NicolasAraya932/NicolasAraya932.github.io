@@ -274,3 +274,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: var(--ink); cursor: pointer;
 }
 .lang-btn:hover { background: #F0F0EA; }
+.abstract { margin-top: 4px; }
+.abstract summary { cursor: pointer; font-size: 14px; font-weight: 600; color: var(--green); width: fit-content; padding: 6px 0; }
+.abstract summary:hover { color: var(--green-dark); }
+.abstract p { margin-top: 8px; font-size: 15px; line-height: 1.65; color: var(--ink-2); max-width: 820px; }

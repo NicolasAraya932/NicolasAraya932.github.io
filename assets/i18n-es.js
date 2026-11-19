@@ -17,8 +17,8 @@
     "Contact": "Contacto",
     "Main": "Principal",
     "Computer Engineer · M.Sc. Electrical Engineering": "Ingeniero Civil en Computación · Magíster en Ingeniería Eléctrica",
-    "I take 3D perception out of the lab and into the orchard.": "Llevo la percepción 3D del laboratorio al huerto.",
-    "I build systems that let robots and sensors understand real places: from 3D reconstruction research to hardware I install myself in the field, and the students I teach along the way.": "Construyo sistemas que permiten a robots y sensores entender lugares reales: desde investigación en reconstrucción 3D hasta hardware que yo mismo instalo en terreno, y los estudiantes a los que enseño en el camino.",
+    "I build software that works in the real world.": "Construyo software que funciona en el mundo real.",
+    "From 3D computer vision research to web platforms used every day and robots in the field: I take ideas from prototype to production.": "Desde investigación en visión por computador 3D hasta plataformas web de uso diario y robots en terreno: llevo las ideas del prototipo a producción.",
     "Get in touch": "Contáctame",
     "See my thesis": "Ver mi tesis",
     "M.Sc. thesis, highest distinction": "Tesis de magíster, distinción máxima",
@@ -58,8 +58,9 @@
     "Public tools built during the thesis: a Nerfstudio patch that keeps several models in one coordinate frame, FruitNeRF on a ZipNeRF backbone, and a live 3D model explorer. Plus a hands-on workshop at LACORO 2025.": "Herramientas públicas creadas durante la tesis: un parche de Nerfstudio que mantiene varios modelos en un mismo sistema de coordenadas, FruitNeRF sobre una base ZipNeRF y un explorador de modelos 3D en vivo. Además, un taller práctico en LACORO 2025.",
     "See the code": "Ver el código",
     "Forthcoming papers": "Próximas publicaciones",
-    "Details will be shared once published.": "Los detalles se compartirán cuando se publiquen.",
+    "Full papers will be shared once published.": "Los artículos completos se compartirán cuando se publiquen.",
     "Under review": "En revisión",
+    "Abstract": "Resumen (en inglés)",
 
     // Thesis
     "Master's thesis · defended 26 October 2026": "Tesis de magíster · defendida el 26 de octubre de 2026",
